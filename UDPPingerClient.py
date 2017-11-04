@@ -12,16 +12,92 @@ import random
 import socket
 import time 
 
-#since we need to send a ping message to specific ip and port 
-#we need to specify servers IP and port number 
 
-UDP_IP = '127.0.0.1' #local host 
-UDP_PORT = 12000 #server listening at port 
+class file_handler():
 
-serverAddress = (UDP_IP,UDP_PORT)
-clientSocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM) # UDP
+	def file(self,file_name):
+		try:
 
-clientSocket.settimeout(20) #wait for 20 seconds before time out 
+
+
+
+	#read file_name
+	#store received packet into the memory
+
+	pass
+
+
+#This class will create connection and will receive the response -
+#After receiving the response it will send the response to transport for further verification
+
+class _client_connection():
+	# create connection
+	server_ip = None
+	server_port = None
+	client_socket = None
+
+	def _client_connection(self, server_ip = '127.0.0.1', server_port=12000): #default defined
+
+		self.server_ip = server_ip
+		self.server_port = server_port
+
+	@staticmethod  #we don't want this value to be change
+	def create_client_socket(self):
+
+		'''AF_INET refers to the Internet family of protocols, and
+		it is of the SOCK_DGRAM datagram type, which means UDP -- Foundation of  Network Programming'''
+
+		client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+		#if required we can set_up time out condition for client_socket as well
+		#clientSocket.settimeout(20) comment out if needed
+		return client_socket
+
+	def send_request_to_server(self, message, address, client_socket):
+		try:
+			send = client_socket.sendto(message,address) #message always needs to be in byte format
+		except Exception as e:
+			print(e)
+
+
+	def receive_response_from_server(self,client_socket):
+
+		try:
+			message, address = client_socket.recvfrom(1024)
+		except Exception as e:
+			return e
+
+		if message:
+			return message
+
+
+	def close_connection(self,client_socket):
+
+		client_socket.close()
+
+	#also client connection will receive response from server and send it transport
+
+
+
+
+
+class _transport(_client_connection.client_socket):
+
+
+	client_socket = _client_connection.client_socket
+
+	#receive response for the request send by client connection
+	def receive_packet(self,packet):
+
+
+	#Disect packet and do the necessary stuffs
+
+
+	#receive file from server,
+	#verify check sum
+	#if packet not found in sequence, request for retransmission
+	#and send packet to file_handler to save in the disk
+
+	pass
 
 try:
 
@@ -51,8 +127,7 @@ try:
 			print("Round trip time (RTT):"+str(end_time - sending_time))
 			rcv_flag = False
 
-finally:
-	clientSocket.close()
+
 
 
 

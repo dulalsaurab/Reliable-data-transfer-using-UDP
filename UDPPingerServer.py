@@ -10,10 +10,12 @@
 '''
 
 
-
 import random
 import socket 
 import datetime
+
+class server_packet():
+	pass
 
 
 
