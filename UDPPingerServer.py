@@ -14,8 +14,21 @@ import random
 import socket 
 import datetime
 
-class server_packet():
+class server_connection():
+
+	server_ip = None
+	server_port = None
+	client_socket = None
+
+class file_handler():
+	#read the file and create a chunk out of it
 	pass
+
+class server_packet():
+
+	def calculate_checksum(self):
+		pass
+
 
 
 
