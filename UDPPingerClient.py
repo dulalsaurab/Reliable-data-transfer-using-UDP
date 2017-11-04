@@ -6,8 +6,6 @@
  Description: Simple UDPPingerClient program  	
 '''
 
-#ea
-
 import random
 import socket
 import time 
@@ -95,30 +93,41 @@ class _client_connection():
 
 	#Disect packet and do the necessary stuffs
 
-
-
-def main():
-
-
-	#will create a conn
-	#wait in loop for packets
-	#and send the received packet to transport for verification
-	#if packet ok, send it to file handler who will write to the file,
-	#stay in loop to receive packet
-	#upon completion, close the connection
+def connection_handler():
+	#this function will handle all the connections
+	# will create a conn
+	# wait in loop for packets
+	# and send the received packet to transport for verification
+	# if packet ok, send it to file handler who will write to the file,
+	# stay in loop to receive packet
+	# upon completion, close the connection
 	# client_object.buffer_method()
 	# print(client_object.server_p ort)
 	# while True:
 
-
-
-
-
 	pass
+
+
+def main():
+	connection_handler()
+
 
 
 if __name__ == '__main__':
 	main()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

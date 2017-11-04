@@ -15,18 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UDPPingerClient.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UDPPingerClient.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="32" selection-end-column="24" />
-              <folding>
-                <element signature="e#155#168#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -40,13 +28,25 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UDPPingerClient.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UDPPingerClient.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="763">
+              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+              <folding>
+                <element signature="e#150#163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UDPPingerServer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UDPPingerServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="-454">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
-                <element signature="e#113#126#0" expanded="true" />
+                <element signature="e#110#123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,8 +61,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/UDPPingerClient.py" />
         <option value="$PROJECT_DIR$/UDPPingerServer.py" />
+        <option value="$PROJECT_DIR$/UDPPingerClient.py" />
       </list>
     </option>
   </component>
@@ -190,7 +190,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/UDPPingerClient.py</url>
-          <line>10</line>
+          <line>8</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -203,7 +203,7 @@
         <state relative-caret-position="120">
           <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
-            <element signature="e#155#168#0" expanded="true" />
+            <element signature="e#150#163#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -224,7 +224,7 @@
         <state relative-caret-position="30">
           <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding>
-            <element signature="e#113#126#0" expanded="true" />
+            <element signature="e#110#123#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -234,7 +234,7 @@
         <state relative-caret-position="120">
           <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
-            <element signature="e#155#168#0" expanded="true" />
+            <element signature="e#150#163#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -244,7 +244,7 @@
         <state relative-caret-position="30">
           <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding>
-            <element signature="e#113#126#0" expanded="true" />
+            <element signature="e#110#123#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -297,20 +297,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UDPPingerClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="763">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
           <folding>
-            <element signature="e#155#168#0" expanded="true" />
+            <element signature="e#150#163#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UDPPingerServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="-454">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="e#113#126#0" expanded="true" />
+            <element signature="e#110#123#0" expanded="true" />
           </folding>
         </state>
       </provider>
