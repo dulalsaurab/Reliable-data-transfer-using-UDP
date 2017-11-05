@@ -10,16 +10,25 @@
 import random
 import socket 
 import datetime
-import os
+import os, sys
+import pickle
+
+sequence_counter = 0
+ack_counter = 0
+
+def exception_handler(e):
+	exc_type, exc_obj, exc_tb = sys.exc_info()
+	fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+	print('Type: %s' % (exc_type), 'File name: %s' % (fname), exc_tb.tb_lineno, 'Error: %s' % (e))
 
 
 class server_connection():
 
 	server_ip = None
 	server_port = None
-	client_socket = None
+	server_socket = None
 	server_address = None
-	def __init__(self,server_ip,server_port):
+	def __init__(self,server_ip='127.0.0.1',server_port=12000):
 
 		print("Initilizing ip address and port number")
 		self.server_port = server_port
@@ -28,10 +37,14 @@ class server_connection():
 
 	def create_connection(self):
 
-		print("creating server connection")
-		server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-		server_socket.bind(self.server_address) #binding is only done in case of server
-		return server_socket
+		print("Creating server connection")
+		try:
+			self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+			self.server_socket.bind(self.server_address) #binding is only done in case of server
+		except socket.error as err:
+			exception_handler(e)
+			return False
+		return True
 
 
 	def close_connection(self,server_socket):
@@ -42,6 +55,7 @@ class server_connection():
 
 def file_handler(file_name):
 	#first iteration get every info about file
+
 	file_stats = os.stat(file_name)
 	print(file_stats)
 	return file_stats
@@ -55,11 +69,23 @@ class server_packet():
 
 
 def connection_handler():
-	pass
+
+	connection_object = server_connection()
+	connection_object.create_connection()
+	print("Server socket created: " +str(connection_object.server_socket))
+
+	while True:
+		print("Server waiting for request")
+		message, address= connection_object.server_socket.recvfrom(1024)
+		message = pickle.loads(message) #1=seq, 2=ack, 3=mes, 4=type
+		for i in message:
+			print(i)
+		# print("Received message from the client: " + str(message.decode('utf-8')) + " and the address is :" + str(
+		# 	address))
 
 
 def main():
-	pass
+	connection_handler()
 
 
 

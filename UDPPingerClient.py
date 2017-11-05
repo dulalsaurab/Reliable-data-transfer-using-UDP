@@ -9,7 +9,11 @@
 import random
 import socket
 import time 
+import os, sys
+import pickle
 
+sequence_counter =0
+ack_counter  = 0
 
 class file_handler():
 
@@ -21,40 +25,68 @@ class file_handler():
 	pass
 
 
+# class _transport(_client_connection.client_socket):
+#
+#
+# 	client_socket = _client_connection.client_socket
+#
+# 	#receive response for the request send by client connection
+# 	def receive_packet(self,packet):
+# 		#verify the packet - checksum, sequence, and send response to client conn
+# 		pass
+#Disect packet and do the necessary stuffs
+
+
+
+def exception_handler(e):
+	exc_type, exc_obj, exc_tb = sys.exc_info()
+	fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+	print('Type: %s' % (exc_type), 'File name: %s' % (fname), exc_tb.tb_lineno, 'Error: %s' % (e))
+
+
 #This class will create connection and will receive the response -
 #After receiving the response it will send the response to transport for further verification
 
 class _client_connection():
+
 	# create connection
 	server_ip = None
 	server_port = None
 	client_socket = None
+	address = None
+
 
 	def __init__(self, server_ip = '127.0.0.1', server_port=12000): #default defined
 
 		print("Initializing server ip address and port number")
 		self.server_ip = server_ip
 		self.server_port = server_port
+		self.address = (self.server_ip, self.server_port)
 
-	@staticmethod  #we don't want this value to be change
 	def create_client_socket(self):
 
 		print("Creating client socket")
 
 		'''AF_INET refers to the Internet family of protocols, and
-		it is of the SOCK_DGRAM datagram type, which means UDP -- Foundation of  Network Programming'''
+		it is of the SOCK_DGRAM datagram type, which means UDP -- Foundation of Network Programming'''
+		try:
+			self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+		except socket.error as err:
+			exception_handler(err)
+			return False
 
-		client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 		#if required we can set_up time out condition for client_socket as well
 		#clientSocket.settimeout(20) comment out if needed
-		return client_socket
+
+		return True
+
 
 	def send_request_to_server(self, message, address, client_socket):
-		print("sending request to the client")
+		print("Sending request to the server")
 		try:
 			send = client_socket.sendto(message,address) #message always needs to be in byte format
 		except Exception as e:
-			print(e)
+			exception_handler(e)
 
 
 	def receive_response_from_server(self,client_socket):
@@ -65,33 +97,27 @@ class _client_connection():
 			return e
 
 		if message:
-			return message
+			return message, address
+
 
 
 	def close_connection(self,client_socket):
 		print("Closing socket connection")
 		client_socket.close()
 
+
 	def buffer_method(self):
 		print("this is a buffer method")
 
 	#also client connection will receive response from server and send it transport
 
-
-
-
-
-# class _transport(_client_connection.client_socket):
-#
-#
-# 	client_socket = _client_connection.client_socket
-#
-# 	#receive response for the request send by client connection
-# 	def receive_packet(self,packet):
-# 		#verify the packet - checksum, sequence, and send response to client conn
-# 		pass
-
-	#Disect packet and do the necessary stuffs
+#type - d=data, a=ack, r=retransmission
+def create_packet(message=None, type='d'):
+	global sequence_counter
+	global ack_counter
+	#create list for each message [seqnum,acknowledgement,data]
+	packet = pickle.dumps([sequence_counter,ack_counter,message])
+	return packet
 
 def connection_handler():
 	#this function will handle all the connections
@@ -105,7 +131,17 @@ def connection_handler():
 	# print(client_object.server_p ort)
 	# while True:
 
-	pass
+
+	#create a conn object
+	connection_object  = _client_connection()
+	if connection_object.create_client_socket():
+		print("Client socket created: " + str(connection_object.client_socket))
+		packet = create_packet("hello world nepal")
+		connection_object.send_request_to_server(packet,connection_object.address,connection_object.client_socket)
+
+	else:
+		print("Failled to create client socket")
+
 
 
 def main():
@@ -115,6 +151,9 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
+
+
 
 
 
