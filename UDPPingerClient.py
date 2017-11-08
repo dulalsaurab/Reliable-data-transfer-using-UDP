@@ -24,7 +24,6 @@ class file_handler():
 
 	pass
 
-
 # class _transport(_client_connection.client_socket):
 #
 #
@@ -41,7 +40,7 @@ class file_handler():
 def exception_handler(e):
 	exc_type, exc_obj, exc_tb = sys.exc_info()
 	fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-	print('Type: %s' % (exc_type), 'File name: %s' % (fname), exc_tb.tb_lineno, 'Error: %s' % (e))
+	print('Type: %s' % (exc_type), 'On file: %s' % (fname), exc_tb.tb_lineno, 'Error: %s' % (e))
 
 
 #This class will create connection and will receive the response -
@@ -112,41 +111,50 @@ class _client_connection():
 	#also client connection will receive response from server and send it transport
 
 #type - d=data, a=ack, r=retransmission
-def create_packet(message=None, type='d'):
+def create_packet(message=None, file_name=None,type='d',):
 	global sequence_counter
 	global ack_counter
 	#create list for each message [seqnum,acknowledgement,data]
-	packet = pickle.dumps([sequence_counter,ack_counter,message])
+	packet = pickle.dumps([sequence_counter,ack_counter,message,file_name])
 	return packet
 
-def connection_handler():
-	#this function will handle all the connections
+def connection_handler(file_name=None):
+
+	file_name = file_name
+
+	# This function will handle all the connections
 	# will create a conn
 	# wait in loop for packets
 	# and send the received packet to transport for verification
 	# if packet ok, send it to file handler who will write to the file,
 	# stay in loop to receive packet
 	# upon completion, close the connection
-	# client_object.buffer_method()
-	# print(client_object.server_p ort)
-	# while True:
 
 
 	#create a conn object
 	connection_object  = _client_connection()
 	if connection_object.create_client_socket():
 		print("Client socket created: " + str(connection_object.client_socket))
-		packet = create_packet("hello world nepal")
+
+		packet = create_packet("hello world nepal", 'READMEee.md')
 		connection_object.send_request_to_server(packet,connection_object.address,connection_object.client_socket)
 
 	else:
 		print("Failled to create client socket")
 
+	message,address = connection_object.receive_response_from_server(connection_object.client_socket)
+	print(pickle.loads(message))
+	print("And address is :" +str(address))
 
 
 def main():
-	connection_handler()
 
+	#Input the file from the console
+
+	# print("Enter the filename to download from the server: ")
+	# file_name = input()
+
+	connection_handler()
 
 
 if __name__ == '__main__':
@@ -154,24 +162,6 @@ if __name__ == '__main__':
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#
 # try:
 #
 # 	difftime = 0
@@ -199,8 +189,3 @@ if __name__ == '__main__':
 # 			print("Receved at :"+str(message[1]))
 # 			print("Round trip time (RTT):"+str(end_time - sending_time))
 # 			rcv_flag = False
-
-
-
-
-

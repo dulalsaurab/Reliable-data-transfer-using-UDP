@@ -19,7 +19,7 @@ ack_counter = 0
 def exception_handler(e):
 	exc_type, exc_obj, exc_tb = sys.exc_info()
 	fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-	print('Type: %s' % (exc_type), 'File name: %s' % (fname), exc_tb.tb_lineno, 'Error: %s' % (e))
+	print('Type: %s' % (exc_type), 'On file: %s' % (fname), exc_tb.tb_lineno, 'Error: %s' % (e))
 
 
 class server_connection():
@@ -52,12 +52,22 @@ class server_connection():
 		server_socket.close()
 
 
+	def send_response_to_client(self,server_socket,message,address):
+		print("Sending request to the server")
+		try:
+			server_socket.sendto(message,address)  # message always needs to be in byte format
+			print("Message sent sucessfull")
+		except Exception as e:
+			exception_handler(e)
+
 
 def file_handler(file_name):
 	#first iteration get every info about file
-
-	file_stats = os.stat(file_name)
-	print(file_stats)
+	try:
+		file_stats = os.stat(file_name)
+	except Exception as e:
+		exception_handler(e)
+		file_stats = e
 	return file_stats
 
 
@@ -77,11 +87,16 @@ def connection_handler():
 	while True:
 		print("Server waiting for request")
 		message, address= connection_object.server_socket.recvfrom(1024)
-		message = pickle.loads(message) #1=seq, 2=ack, 3=mes, 4=type
-		for i in message:
-			print(i)
-		# print("Received message from the client: " + str(message.decode('utf-8')) + " and the address is :" + str(
-		# 	address))
+		message = pickle.loads(message) #1=seq, 2=ack, 3=mes, 4=file_name, 5=type
+
+		if message:
+			print('Received message from the client: ' + str(message[2]) +
+				  '\nRequest file name :' + str(message[3])+
+				  '\nAnd from the address: '+ str(address))
+			#Check if the request file exist on the server or not
+			file_stat = file_handler(message[3])
+			file_stat = pickle.dumps([file_stat])
+			connection_object.send_response_to_client(connection_object.server_socket,file_stat,address)
 
 
 def main():
@@ -95,7 +110,22 @@ if __name__=='__main__':
 
 
 
-#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 	# Create a UDP socket
 # 	# Notice the use of SOCK_DGRAM for UDP packets
 # serverSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -124,7 +154,7 @@ if __name__=='__main__':
 # 		#Token is used to break the server message at client side
 # 		message = message.upper()+b'token'+str(datetime.datetime.now()).encode('utf-8')
 # 		sent = serverSocket.sendto(message, address)
-#
+
 
 
 
