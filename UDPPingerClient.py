@@ -11,9 +11,12 @@ import socket
 import time 
 import os, sys
 import pickle
+import time
+
 
 sequence_counter =0
 ack_counter  = 0
+alternating_bit = 1
 
 class file_handler():
 
@@ -34,7 +37,6 @@ class file_handler():
 # 		#verify the packet - checksum, sequence, and send response to client conn
 # 		pass
 #Disect packet and do the necessary stuffs
-
 
 
 def exception_handler(e):
@@ -62,6 +64,7 @@ class _client_connection():
 		self.server_port = server_port
 		self.address = (self.server_ip, self.server_port)
 
+
 	def create_client_socket(self):
 
 		print("Creating client socket")
@@ -70,6 +73,8 @@ class _client_connection():
 		it is of the SOCK_DGRAM datagram type, which means UDP -- Foundation of Network Programming'''
 		try:
 			self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+			self.client_socket.settimeout(2)
+
 		except socket.error as err:
 			exception_handler(err)
 			return False
@@ -81,22 +86,19 @@ class _client_connection():
 
 
 	def send_request_to_server(self, message, address, client_socket):
+
 		print("Sending request to the server")
 		try:
 			send = client_socket.sendto(message,address) #message always needs to be in byte format
 		except Exception as e:
 			exception_handler(e)
 
-
 	def receive_response_from_server(self,client_socket):
-
 		try:
 			message, address = client_socket.recvfrom(1024)
-		except Exception as e:
-			return e
-
-		if message:
 			return message, address
+		except socket.timeout:
+			return
 
 
 
@@ -111,40 +113,70 @@ class _client_connection():
 	#also client connection will receive response from server and send it transport
 
 #type - d=data, a=ack, r=retransmission
-def create_packet(message=None, file_name=None,type='d',):
+def create_packet(message=None, file_name=None,type='a',):
+
 	global sequence_counter
 	global ack_counter
+
 	#create list for each message [seqnum,acknowledgement,data]
-	packet = pickle.dumps([sequence_counter,ack_counter,message,file_name])
+	packet = pickle.dumps([sequence_counter,ack_counter,message,file_name,type,alternating_bit])
 	return packet
 
 def connection_handler(file_name=None):
 
+	global alternating_bit
+
 	file_name = file_name
-
-	# This function will handle all the connections
-	# will create a conn
-	# wait in loop for packets
-	# and send the received packet to transport for verification
-	# if packet ok, send it to file handler who will write to the file,
-	# stay in loop to receive packet
-	# upon completion, close the connection
-
-
 	#create a conn object
 	connection_object  = _client_connection()
 	if connection_object.create_client_socket():
 		print("Client socket created: " + str(connection_object.client_socket))
-
-		packet = create_packet("hello world nepal", 'READMEee.md')
-		connection_object.send_request_to_server(packet,connection_object.address,connection_object.client_socket)
-
 	else:
-		print("Failled to create client socket")
+		print("Failled to create client socket, restart the client program")
+		return
 
-	message,address = connection_object.receive_response_from_server(connection_object.client_socket)
-	print(pickle.loads(message))
-	print("And address is :" +str(address))
+	first_sent = True
+	while first_sent:
+		packet = create_packet("Initial request", 'some_test_file', 'd')
+		try:
+			connection_object.send_request_to_server(packet, connection_object.address, connection_object.client_socket)
+			message, address = connection_object.receive_response_from_server(connection_object.client_socket)
+
+			if message:
+				if ACK_server == alternating_bit:  #we got the right packet
+					alternating_bit ^=1
+					print("File is found on the server, now server will start transmitting the file")
+					print(pickle.loads(message))
+					print("Received address :" +str(address))
+					break
+				else:
+					continue 						#We didn't find ack for the first message
+
+		except Exception as e:
+			print('Request timeout') 			#This is a timeout case
+
+
+	#set some arbitary counter
+	counter =0
+	type = 'a'				#ack
+	while True:
+
+		packet = create_packet("hello world nepal", 'some_test_file', type) #this is an acknowledgement request
+		connection_object.send_request_to_server(packet, connection_object.address, connection_object.client_socket)
+		#send last message to server and break
+		if type == 'c':
+			break
+		message, address = connection_object.receive_response_from_server(connection_object.client_socket)
+
+		if message:
+			packet = pickle.loads(message)
+			print(pickle.loads(message))  # counter, data, alternatingbit
+			print("And address is :" + str(address))
+
+			if packet[1] == 'EOF':
+				type = 'c' 				 #EOF ACK
+		counter+=1
+
 
 
 def main():
@@ -162,30 +194,3 @@ if __name__ == '__main__':
 
 
 
-# try:
-#
-# 	difftime = 0
-# 	rcv_flag = False
-#
-# 	for apptempt in range(0,10):	#sending 10 sucessive message
-#
-# 		# message format, sequence number and time
-# 		MESSAGE  = str("Sequence number :"+str(apptempt)+" and send at time :"+str(time.time()))
-# 		MESSAGE = MESSAGE.encode('utf-8') #converting message to bytes
-# 		sending_time = time.time()
-#
-# 		sent = clientSocket.sendto(MESSAGE, serverAddress)
-#
-# 		try:
-# 			message, address = clientSocket.recvfrom(1024)
-# 		except Exception as e:
-# 			print("Connection time out")
-# 			continue
-# 		end_time = time.time()
-#
-# 		if message:
-# 			message = message.decode('utf-8').split('token')
-# 			print("Message from server: "+str(message[0]))
-# 			print("Receved at :"+str(message[1]))
-# 			print("Round trip time (RTT):"+str(end_time - sending_time))
-# 			rcv_flag = False
