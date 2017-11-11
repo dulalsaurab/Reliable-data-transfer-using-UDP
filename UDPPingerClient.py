@@ -27,10 +27,11 @@ class file_handler():
 
 	pass
 
-# class _transport(_client_connection.client_socket):
-#
-#
-# 	client_socket = _client_connection.client_socket
+class _transport():
+
+	received_data = ''
+
+
 #
 # 	#receive response for the request send by client connection
 # 	def receive_packet(self,packet):
@@ -128,6 +129,7 @@ def create_packet(alternating_bit, message='', file_name='', type='a',):
 def connection_handler(file_name=None):
 
 	global alternating_bit
+	chunk_received = _transport()
 
 	file_name = file_name
 	#create a conn object
@@ -160,6 +162,8 @@ def connection_handler(file_name=None):
 						print("File is found on the server, now server will start transmitting the file")
 						first_sent = False
 						type = 'a'
+					elif first_sent == False and packet[1]!='EOF' :
+						chunk_received.received_data+=str(packet[1])
 					if packet[1] == 'EOF':
 						type = 'c'
 					print("Received address :" +str(address))
@@ -171,7 +175,7 @@ def connection_handler(file_name=None):
 			exception_handler(e)
 			print('Request timeout') #This is a timeout case
 
-
+	print('The received message :' + chunk_received.received_data)
 
 
 

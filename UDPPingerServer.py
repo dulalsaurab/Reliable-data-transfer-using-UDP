@@ -97,7 +97,7 @@ class file_handler():
 
 
 class server_packet():
-
+	packet = ''
 	def calculate_checksum(self):
 		pass
 
@@ -106,6 +106,7 @@ class server_packet():
 def connection_handler():
 
 	global alternating_bit
+
 	file_object = file_handler()
 	connection_object = server_connection()
 	connection_object.create_connection()
@@ -128,7 +129,7 @@ def connection_handler():
 				file_stat = file_object.file_read(message[3])
 				file_stat = pickle.dumps([counter,file_stat,alternating_bit])
 
-				#connection_object.send_response_to_client(connection_object.server_socket,file_stat,address)
+				connection_object.send_response_to_client(connection_object.server_socket,file_stat,address)
 				alternating_bit ^= 1
 				file_object.file_sequence_counter = -1 #whenever you received 'd' request, its always the begnning of the process
 
