@@ -88,17 +88,21 @@ class _client_connection():
 	def send_request_to_server(self, message, address, client_socket):
 
 		print("Sending request to the server")
+
 		try:
 			send = client_socket.sendto(message,address) #message always needs to be in byte format
+
 		except Exception as e:
 			exception_handler(e)
 
+
 	def receive_response_from_server(self,client_socket):
+
 		try:
 			message, address = client_socket.recvfrom(1024)
 			return message, address
 		except socket.timeout:
-			return
+			return Exception
 
 
 
@@ -113,13 +117,12 @@ class _client_connection():
 	#also client connection will receive response from server and send it transport
 
 #type - d=data, a=ack, r=retransmission
-def create_packet(message=None, file_name=None,type='a',):
+def create_packet(alternating_bit, message='', file_name='', type='a',):
 
 	global sequence_counter
 	global ack_counter
-
 	#create list for each message [seqnum,acknowledgement,data]
-	packet = pickle.dumps([sequence_counter,ack_counter,message,file_name,type,alternating_bit])
+	packet = pickle.dumps([sequence_counter, ack_counter, message, file_name, type, alternating_bit])
 	return packet
 
 def connection_handler(file_name=None):
@@ -136,61 +139,50 @@ def connection_handler(file_name=None):
 		return
 
 	first_sent = True
-	while first_sent:
-		packet = create_packet("Initial request", 'some_test_file', 'd')
+	type = 'd' #data request
+	counter = 0
+	while True:
+		print(alternating_bit)
+		packet = create_packet(alternating_bit,'Initial request','some_test_file', type)
+
 		try:
 			connection_object.send_request_to_server(packet, connection_object.address, connection_object.client_socket)
+			if type == 'c':
+				print("The transfer process completed, process terminating !!")
+				break
 			message, address = connection_object.receive_response_from_server(connection_object.client_socket)
+			packet = pickle.loads(message)  #0=counter, 1=data, 2=ALTbit
 
-			if message:
-				if ACK_server == alternating_bit:  #we got the right packet
-					alternating_bit ^=1
-					print("File is found on the server, now server will start transmitting the file")
-					print(pickle.loads(message))
+			if packet:
+				if alternating_bit == packet[2]:  #we got the right packet
+					alternating_bit ^= 1
+					if first_sent:
+						print("File is found on the server, now server will start transmitting the file")
+						first_sent = False
+						type = 'a'
+					if packet[1] == 'EOF':
+						type = 'c'
 					print("Received address :" +str(address))
-					break
+
 				else:
-					continue 						#We didn't find ack for the first message
+					continue 		#We didn't find ack for the first message
 
 		except Exception as e:
-			print('Request timeout') 			#This is a timeout case
-
-
-	#set some arbitary counter
-	counter =0
-	type = 'a'				#ack
-	while True:
-
-		packet = create_packet("hello world nepal", 'some_test_file', type) #this is an acknowledgement request
-		connection_object.send_request_to_server(packet, connection_object.address, connection_object.client_socket)
-		#send last message to server and break
-		if type == 'c':
-			break
-		message, address = connection_object.receive_response_from_server(connection_object.client_socket)
-
-		if message:
-			packet = pickle.loads(message)
-			print(pickle.loads(message))  # counter, data, alternatingbit
-			print("And address is :" + str(address))
-
-			if packet[1] == 'EOF':
-				type = 'c' 				 #EOF ACK
-		counter+=1
+			exception_handler(e)
+			print('Request timeout') #This is a timeout case
 
 
 
-def main():
 
-	#Input the file from the console
 
-	# print("Enter the filename to download from the server: ")
-	# file_name = input()
-
-	connection_handler()
 
 
 if __name__ == '__main__':
-	main()
+
+	#Input the file from the console
+	# print("Enter the filename to download from the server: ")
+	# file_name = input()
+	connection_handler()
 
 
 

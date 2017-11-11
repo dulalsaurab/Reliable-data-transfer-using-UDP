@@ -80,7 +80,7 @@ class file_handler():
 		#first iteration get every info about file
 		self.file_name = file_name
 		try:
-			file_stats = os.stat(file_name)
+			file_size = os.stat('some_test_file').st_size
 			temp_counter = 0
 			with open(file_name,'r') as f:
 				for line in f:
@@ -91,8 +91,9 @@ class file_handler():
 
 		except Exception as e:
 			exception_handler(e)
-			file_stats = e
-		return file_stats
+			file_size = e
+
+		return {'file_size':file_size}
 
 
 class server_packet():
@@ -104,23 +105,20 @@ class server_packet():
 
 def connection_handler():
 
+	global alternating_bit
 	file_object = file_handler()
-
 	connection_object = server_connection()
 	connection_object.create_connection()
 	print("Server socket created: " +str(connection_object.server_socket))
-
 	print("Server waiting for request")
-
-
 
 	#Binary counter
 	counter = 0
-	while True:
-		global alternating_bit
 
+	while True:
 		message, address= connection_object.server_socket.recvfrom(1024)
 		message = pickle.loads(message) #1=seq, 2=ack, 3=mes, 4=file_name, 5=type, 6=alternating_bit
+
 		if message:
 			if message[4] == 'd':
 				print('Received message from the client: ' + str(message[2]) +
@@ -128,20 +126,28 @@ def connection_handler():
 					  '\nAnd from the address: '+ str(address))
 				#Check if the request file exist on the server or not
 				file_stat = file_object.file_read(message[3])
-				file_stat = pickle.dumps([file_stat])
+				file_stat = pickle.dumps([counter,file_stat,alternating_bit])
+
 				#connection_object.send_response_to_client(connection_object.server_socket,file_stat,address)
+				alternating_bit ^= 1
+				file_object.file_sequence_counter = -1 #whenever you received 'd' request, its always the begnning of the process
 
 			if message[4] == 'a':
 				#start sending message to the client, but only send by checking the alternating bit received
 				print("Received ACK from client" + " Alternative bit :" +str(message[5]))
-				alternating_bit ^= 1
-				data = file_object.file_content[file_object.increase_sequence_counter()]
+				if alternating_bit == message[5]:
+					data = file_object.file_content[file_object.increase_sequence_counter()]
+				else:
+					data = file_object.file_content[file_object.file_sequence_counter]
 				content = pickle.dumps([counter,data,alternating_bit])
-				#connection_object.send_response_to_client(connection_object.server_socket, content, address)
+				connection_object.send_response_to_client(connection_object.server_socket, content, address)
+				alternating_bit ^= 1
 
 			if message[4] == 'c':
 				print("Transmission completed !!")
 				break
+
+
 		counter += 1
 
 def main():
