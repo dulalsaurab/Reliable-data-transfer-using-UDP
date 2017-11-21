@@ -1,10 +1,13 @@
 
 '''
+
 'Server Program'
-@Author: Saurab
- Date. : October 16, 2017 
+ Author: Saurab
+ Date  : October 16, 2017 
  Dependencies: Python 3+ 
- Description:
+ Description:Reliable data transfer using UDP
+
+
 '''
 
 import random
@@ -12,10 +15,20 @@ import socket
 import datetime
 import os, sys
 import pickle
+import hashlib 
+import time 
+receiving_size = 2048
+
 
 sequence_counter = 0
 ack_counter = 0
 alternating_bit  = 1
+
+# Don't forget
+# 1. Every packet has got a sequence number, 
+#	- and if some packet is lost, it can be asked again using that sequence number 
+# 2. 
+
 
 def exception_handler(e):
 	exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -41,7 +54,7 @@ class server_connection():
 		print("Creating server connection")
 		try:
 			self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-			self.server_socket.bind(self.server_address) #binding is only done in case of server
+			self.server_socket.bind(self.server_address) #Binding is only done in case of server
 		except socket.error as err:
 			exception_handler(e)
 			return False
@@ -63,7 +76,31 @@ class server_connection():
 		except Exception as e:
 			exception_handler(e)
 
-class file_handler():
+class server_packet():
+	checksum = 0
+	length = 0
+	seqNo = 0
+	msg = 0
+	total_packets = [] #this is a statis variable, this will hold the object of each packets
+	
+	@classmethod
+	def increase_seqNumber(self):
+		print(self.seqNo)
+		self.seqNo += 1
+		return self.seqNo
+
+	def make_packet(self, data):
+		self.total_packets.append(self)
+		self.msg = data
+		self.length = str(len(data))
+		self.checksum=hashlib.sha1(data.encode('utf-8')).hexdigest()
+		print ("Length: %s\n Sequence number: %s" % (self.length, self.increase_seqNumber()))
+		return [self.checksum, self.length, self.seqNo, self.msg]
+
+		
+
+
+class file_handler(server_packet):
 
 	file_name = None
 	file_sequence_counter = None
@@ -76,31 +113,36 @@ class file_handler():
 		self.file_sequence_counter += 1
 		return self.file_sequence_counter
 
+	
+	def read_in_chunks(self, file_object, chunk_size=1024):
+	
+		'''Lazy function (generator) to read a file piece by piece.
+		Default chunk size: 1k'''	
+		while True:
+			data = file_object.read(chunk_size)
+			if not data:
+				break
+			yield data
+	
 	def file_read(self,file_name,type='s'): #s=stats, d=data
-		#first iteration get every info about file
+		#First iteration get every info about file
 		self.file_name = file_name
 		try:
 			file_size = os.stat('some_test_file').st_size
+			self.file_content.append(server_packet().make_packet(str(file_size)))
+
 			temp_counter = 0
 			with open(file_name,'r') as f:
-				for line in f:
-					for character in line:
-						self.file_content.append(character)
-						temp_counter += 1
-			self.file_content.append("EOF")
+				for piece in self.read_in_chunks(f):
+					packet = server_packet()
+					self.file_content.append(packet.make_packet(piece))
+					temp_counter += 1
+			
+			self.file_content.append(server_packet().make_packet("EOF"))
 
 		except Exception as e:
 			exception_handler(e)
 			file_size = e
-
-		return {'file_size':file_size}
-
-
-class server_packet():
-	packet = ''
-	def calculate_checksum(self):
-		pass
-
 
 
 def connection_handler():
@@ -115,9 +157,11 @@ def connection_handler():
 
 	#Binary counter
 	counter = 0
+	AB_flag = False #only flip AB if AB_Client matches with AB server
 
 	while True:
-		message, address= connection_object.server_socket.recvfrom(1024)
+		# time.sleep(5)
+		message, address= connection_object.server_socket.recvfrom(receiving_size)
 		message = pickle.loads(message) #1=seq, 2=ack, 3=mes, 4=file_name, 5=type, 6=alternating_bit
 
 		if message:
@@ -126,26 +170,34 @@ def connection_handler():
 					  '\nRequest file name :' + str(message[3])+
 					  '\nAnd from the address: '+ str(address))
 				#Check if the request file exist on the server or not
-				file_stat = file_object.file_read(message[3])
+				file_object.file_read(message[3])
+				file_stat = file_object.file_content[file_object.increase_sequence_counter()]
 				file_stat = pickle.dumps([counter,file_stat,alternating_bit])
-
 				connection_object.send_response_to_client(connection_object.server_socket,file_stat,address)
 				alternating_bit ^= 1
-				file_object.file_sequence_counter = -1 #whenever you received 'd' request, its always the begnning of the process
+				file_object.file_sequence_counter = 0 #whenever you received 'd' request, its always the begnning of the process
 
 			if message[4] == 'a':
 				#start sending message to the client, but only send by checking the alternating bit received
-				print("Received ACK from client" + " Alternative bit :" +str(message[5]))
+				print("Received ACK from client" + " Alternative bit :" +str(message[5]) +"and type :" + str(message[4]))
 				if alternating_bit == message[5]:
 					data = file_object.file_content[file_object.increase_sequence_counter()]
+					AB_flag = True
+					
 				else:
 					data = file_object.file_content[file_object.file_sequence_counter]
+					AB_flag = False
+
 				content = pickle.dumps([counter,data,alternating_bit])
 				connection_object.send_response_to_client(connection_object.server_socket, content, address)
-				alternating_bit ^= 1
+				
+				if AB_flag:
+					alternating_bit ^= 1
 
 			if message[4] == 'c':
+				
 				print("Transmission completed !!")
+				connection_object.close_connection(connection_object.server_socket)
 				break
 
 
@@ -159,43 +211,6 @@ def main():
 if __name__=='__main__':
 	main()
 
-
-
-
-
-
-
-
-
-
-# 	# Create a UDP socket
-# 	# Notice the use of SOCK_DGRAM for UDP packets
-# serverSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-# 	# Assign IP address and port number to socket
-# serverAddress = ('127.0.0.1',12000)
-# serverSocket.bind(serverAddress) #only used in case of server
-#
-#
-# while True:
-#
-# 	print("Server waiting for new request")
-# 	# Generate random number in the range of 0 to 10
-# 	rand = random.randint(0, 10)
-# 	message, address = serverSocket.recvfrom(1024)
-#
-# 	# Receive the client packet along with the address it is coming from
-# 	# Capitalize the message from the client
-# 	# If rand is less is than 4, we consider the packet lost and do not respond
-# 	if rand < 4:
-# 		continue
-#
-# 	print(rand)
-# 	print("Received message from the client: "+str(message.decode('utf-8'))+" and the address is :"+ str(address))
-#
-# 	if message:
-# 		#Token is used to break the server message at client side
-# 		message = message.upper()+b'token'+str(datetime.datetime.now()).encode('utf-8')
-# 		sent = serverSocket.sendto(message, address)
 
 
 
