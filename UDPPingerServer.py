@@ -19,6 +19,7 @@ import hashlib
 import time 
 receiving_size = 2048
 
+#Some global variables 
 
 sequence_counter = 0
 ack_counter = 0
@@ -144,6 +145,29 @@ class file_handler(server_packet):
 			exception_handler(e)
 			file_size = e
 
+def method_alternating_bit(message, connection_object, file_object, counter, address):
+	
+	global alternating_bit
+	AB_flag = False #only flip AB if AB_Client matches with AB server
+
+	if alternating_bit == message[5]:
+		data = file_object.file_content[file_object.increase_sequence_counter()]
+		AB_flag = True
+					
+	else:
+		data = file_object.file_content[file_object.file_sequence_counter]
+		AB_flag = False
+
+	content = pickle.dumps([counter,data,alternating_bit])
+	connection_object.send_response_to_client(connection_object.server_socket, content, address)
+				
+	if AB_flag:
+		alternating_bit ^= 1
+
+	return
+
+
+
 
 def connection_handler():
 
@@ -157,7 +181,6 @@ def connection_handler():
 
 	#Binary counter
 	counter = 0
-	AB_flag = False #only flip AB if AB_Client matches with AB server
 
 	while True:
 		# time.sleep(5)
@@ -180,19 +203,22 @@ def connection_handler():
 			if message[4] == 'a':
 				#start sending message to the client, but only send by checking the alternating bit received
 				print("Received ACK from client" + " Alternative bit : " +str(message[5]) +"and type :" + str(message[4]))
-				if alternating_bit == message[5]:
-					data = file_object.file_content[file_object.increase_sequence_counter()]
-					AB_flag = True
 					
-				else:
-					data = file_object.file_content[file_object.file_sequence_counter]
-					AB_flag = False
+				method_alternating_bit(message, connection_object, file_object, counter, address)
 
-				content = pickle.dumps([counter,data,alternating_bit])
-				connection_object.send_response_to_client(connection_object.server_socket, content, address)
+				# if alternating_bit == message[5]:
+				# 	data = file_object.file_content[file_object.increase_sequence_counter()]
+				# 	AB_flag = True
+					
+				# else:
+				# 	data = file_object.file_content[file_object.file_sequence_counter]
+				# 	AB_flag = False
+
+				# content = pickle.dumps([counter,data,alternating_bit])
+				# connection_object.send_response_to_client(connection_object.server_socket, content, address)
 				
-				if AB_flag:
-					alternating_bit ^= 1
+				# if AB_flag:
+				# 	alternating_bit ^= 1
 
 			if message[4] == 'c':
 				
