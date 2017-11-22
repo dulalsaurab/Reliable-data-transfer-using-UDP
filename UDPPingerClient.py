@@ -185,10 +185,8 @@ def connection_handler(file_name=None):
 				break
 
 			message, address = connection_object.receive_response_from_server(connection_object.client_socket)
-			print(sys.getsizeof(message))
 
 			packet = pickle.loads(message)  #0=counter, 1=data, 2=ALTbit
-			
 			if packet:
 				#check if packet is ok or not
 				if verify_packet(packet[1]):

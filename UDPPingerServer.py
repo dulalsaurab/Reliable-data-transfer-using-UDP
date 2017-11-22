@@ -71,7 +71,7 @@ class server_connection():
 		print("Sending request to the server")
 		try:
 			server_socket.sendto(message,address)  # message always needs to be in byte format
-			print("Message sent sucessfull")
+			print("Message sent sucessfull\n Sequence number : {}".format(pickle.loads(message)[1][2]))
 
 		except Exception as e:
 			exception_handler(e)
@@ -94,7 +94,7 @@ class server_packet():
 		self.msg = data
 		self.length = str(len(data))
 		self.checksum=hashlib.sha1(data.encode('utf-8')).hexdigest()
-		print ("Length: %s\n Sequence number: %s" % (self.length, self.increase_seqNumber()))
+		# print ("Length: %s\n Sequence number: %s" % (self.length, self.increase_seqNumber()))
 		return [self.checksum, self.length, self.seqNo, self.msg]
 
 		
@@ -179,7 +179,7 @@ def connection_handler():
 
 			if message[4] == 'a':
 				#start sending message to the client, but only send by checking the alternating bit received
-				print("Received ACK from client" + " Alternative bit :" +str(message[5]) +"and type :" + str(message[4]))
+				print("Received ACK from client" + " Alternative bit : " +str(message[5]) +"and type :" + str(message[4]))
 				if alternating_bit == message[5]:
 					data = file_object.file_content[file_object.increase_sequence_counter()]
 					AB_flag = True
