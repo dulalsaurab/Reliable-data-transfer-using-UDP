@@ -17,11 +17,14 @@ import time
 import hashlib 
 
 
+#Some global variables 
+
 sequence_counter =0
 ack_counter  = 0
 alternating_bit = 1
 receiving_size = 2048
-
+first_sent = True
+type = 'd' #data request
 
 def exception_handler(e):
 	exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -155,9 +158,51 @@ def create_packet(alternating_bit, message='', file_name='', type='a',):
 	packet = pickle.dumps([sequence_counter, ack_counter, message, file_name, type, alternating_bit])
 	return packet
 
+
+def method_alternating_bit(packet,writeObject,chunk_received,address) : 
+	
+	global alternating_bit
+	global first_sent 
+	global type
+
+	if alternating_bit == packet[2]:  
+
+		#we have got the right packet, so lets write it to file
+		alternating_bit ^= 1
+
+		if first_sent:
+			print("File is found on the server, now server will start transmitting the file")
+			first_sent = False
+			type = 'a'
+		
+		elif first_sent == False and packet[1][3]!='EOF' :
+			try:
+				writeObject.write_to_file('some_test_file_received', packet[1])
+			except Exception as e:
+				exception_handler(e)
+				return False
+
+			chunk_received.received_data+=str(packet[1])
+
+		if packet[1][3]=='EOF':
+			type = 'c'
+
+		print("Received address :" +str(address)) 
+
+	else:
+		return False
+
+	return True 
+
+
+
+
+
 def connection_handler(file_name=None):
 
 	global alternating_bit
+	global first_sent
+	global type
 	chunk_received = _transport()
 	writeObject = file_handler()
 	file_name = file_name
@@ -169,8 +214,6 @@ def connection_handler(file_name=None):
 		print("Failled to create client socket, restart the client program")
 		return
 
-	first_sent = True
-	type = 'd' #data request
 	counter = 0
 	while True:
 		sending_packet = create_packet(alternating_bit,'Initial request','some_test_file', type)
@@ -190,31 +233,30 @@ def connection_handler(file_name=None):
 			if packet:
 				#check if packet is ok or not
 				if verify_packet(packet[1]):
-					
-					if alternating_bit == packet[2]:  
+			 	
+					if method_alternating_bit(packet, writeObject, chunk_received, address) == False:
+						continue 
+						# #we have got the right packet, so lets write it to file
+						# alternating_bit ^= 1
+						# if first_sent:
+						# 	print("File is found on the server, now server will start transmitting the file")
+						# 	first_sent = False
+						# 	type = 'a'
 						
+						# elif first_sent == False and packet[1][3]!='EOF' :
+						# 	try:
+						# 		writeObject.write_to_file('some_test_file_received', packet[1])
+						# 	except Exception as e:
+						# 		exception_handler(e)
+						# 		continue
 
-						#we have got the right packet, so lets write it to file
-						alternating_bit ^= 1
-						if first_sent:
-							print("File is found on the server, now server will start transmitting the file")
-							first_sent = False
-							type = 'a'
-						
-						elif first_sent == False and packet[1][3]!='EOF' :
-							try:
-								writeObject.write_to_file('some_test_file_received', packet[1])
-							except Exception as e:
-								exception_handler(e)
-								continue
+						# 	chunk_received.received_data+=str(packet[1])
 
-							chunk_received.received_data+=str(packet[1])
-
-						if packet[1][3]=='EOF':
-							type = 'c'
-						print("Received address :" +str(address))
-					else:
-						continue 		#We didn't find ack for the first message, thus resend withough changing AB 
+						# if packet[1][3]=='EOF':
+						# 	type = 'c'
+						# print("Received address :" +str(address))
+					# else:
+					# 	continue 		#We didn't find ack for the first message, thus resend withough changing AB 
 				else:
 					print("Packet not received or is corrupted")
 					print("resending the request")
