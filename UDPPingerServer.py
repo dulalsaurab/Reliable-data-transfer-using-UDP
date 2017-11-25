@@ -17,6 +17,8 @@ import os, sys
 import pickle
 import hashlib 
 import time 
+import copy
+
 receiving_size = 2048
 
 #Some global variables 
@@ -71,8 +73,10 @@ class server_connection():
 
 		print("Sending request to the server")
 		try:
+			a = pickle.loads(message) #getting sequence number 
 			server_socket.sendto(message,address)  # message always needs to be in byte format
-			print("Message sent sucessfull\n Sequence number : {}".format(pickle.loads(message)[1][2]))
+
+			print("Message sent sucessfull\n Sequence number : {}".format(a[2]))
 
 		except Exception as e:
 			exception_handler(e)
@@ -83,10 +87,10 @@ class server_packet():
 	seqNo = 0
 	msg = 0
 	total_packets = [] #this is a statis variable, this will hold the object of each packets
-	
+	total_number_of_packets = 0
+
 	@classmethod
 	def increase_seqNumber(self):
-		print(self.seqNo)
 		self.seqNo += 1
 		return self.seqNo
 
@@ -96,7 +100,7 @@ class server_packet():
 		self.length = str(len(data))
 		self.checksum=hashlib.sha1(data.encode('utf-8')).hexdigest()
 		# print ("Length: %s\n Sequence number: %s" % (self.length, self.increase_seqNumber()))
-		return [self.checksum, self.length, self.seqNo, self.msg]
+		return [self.checksum, self.length, self.increase_seqNumber(), self.msg]
 
 		
 
@@ -104,7 +108,7 @@ class server_packet():
 class file_handler(server_packet):
 
 	file_name = None
-	file_sequence_counter = None
+	file_sequence_counter = -1
 	file_content = [] #{sequence:data}
 
 	def __init__(self):
@@ -114,7 +118,6 @@ class file_handler(server_packet):
 		self.file_sequence_counter += 1
 		return self.file_sequence_counter
 
-	
 	def read_in_chunks(self, file_object, chunk_size=1024):
 	
 		'''Lazy function (generator) to read a file piece by piece.
@@ -128,22 +131,32 @@ class file_handler(server_packet):
 	def file_read(self,file_name,type='s'): #s=stats, d=data
 		#First iteration get every info about file
 		self.file_name = file_name
+		counter = 0
 		try:
-			file_size = os.stat('some_test_file').st_size
-			self.file_content.append(server_packet().make_packet(str(file_size)))
+			file_size = os.stat(file_name).st_size
+			# self.file_content.append(server_packet().make_packet(str(file_size)))
 
 			temp_counter = 0
 			with open(file_name,'r') as f:
 				for piece in self.read_in_chunks(f):
-					packet = server_packet()
+					packet = server_packet()	#constructure 
 					self.file_content.append(packet.make_packet(piece))
-					temp_counter += 1
-			
+					temp_counter += 1		
 			self.file_content.append(server_packet().make_packet("EOF"))
 
 		except Exception as e:
 			exception_handler(e)
-			file_size = e
+			self.file_content.append(server_packet().make_packet(str(e)))
+
+		#update first packet with total no of packet info 
+		
+		packet.total_number_of_packets = len(self.file_content) #total number of packets available 
+		self.file_content.insert(0,server_packet().make_packet(str(packet.total_number_of_packets))) #insert at 0th position 
+		self.file_content[0][2] = 0
+		
+		
+		
+		
 
 def method_alternating_bit(message, connection_object, file_object, counter, address):
 	
@@ -166,10 +179,71 @@ def method_alternating_bit(message, connection_object, file_object, counter, add
 
 	return
 
+def get_packets(file_object, seq_list):
+	packet_list = []
+	loop_counter = copy.deepcopy(file_object.file_sequence_counter)
+
+	#determine no_of_packet to send
+	loop_range = 0 
+
+	if len(file_object.file_content) - loop_counter <= 10: 
+		loop_range = len(file_object.file_content) -1 
+	else:
+		loop_range = 10 + loop_counter
+
+	if not seq_list:
+		for x in range(loop_counter, loop_range):  #the problem is at this place 
+			packet_list.append(file_object.file_content[int(file_object.increase_sequence_counter())])
+	else:
+		for x in seq_list:   #x are all the missing sequence 
+			packet_list.append(file_object.file_content[x])
+	return packet_list
+
+
+def selective_repeate(message, file_name, file_object): #2 message, #3 is filename 
+	#first check if file is found or not, if not found send, just one message with file not found exception
+	#send blocks of 10 packets at a time 
+	if not file_object.file_content:
+		file_object.file_read(file_name) #packets list will be created by this time 
+		#send the desired message
+
+	return get_packets(file_object, message)
+		
+
+def connection_handler_selective_repeat():
+	
+	connection_object = server_connection()
+	connection_object.create_connection()
+	file_object = file_handler()
+	print("Server socket created: " +str(connection_object.server_socket))
+	print("Server waiting for request")
+
+	counter = 0 
+	while True:
+		message, address = connection_object.server_socket.recvfrom(receiving_size)
+		message = pickle.loads(message)
+
+		if message:
+			if message[4] == 'd':
+				print('Received request from the client: ' + str(message[2]) +
+					  '\nRequest file name :' + str(message[3])+
+					  '\nAnd from the address: '+ str(address))
+
+				packets_to_be_send = selective_repeate(message[2], message[3], file_object)   #2 message, #3 is filename 
+				#loop and send all he packets 
+
+				for x in range(0,len(packets_to_be_send)):
+					sending_packet = pickle.dumps(packets_to_be_send[x])
+					connection_object.send_response_to_client(connection_object.server_socket,sending_packet,address)
+			
+			elif message[4] == 'c':
+				print("Transmission completed !!")
+				connection_object.close_connection(connection_object.server_socket)
+				break
 
 
 
-def connection_handler():
+def connection_handler_alternating_bit():
 
 	global alternating_bit
 
@@ -189,7 +263,7 @@ def connection_handler():
 
 		if message:
 			if message[4] == 'd':
-				print('Received message from the client: ' + str(message[2]) +
+				print('Received request from the client: ' + str(message[2]) +
 					  '\nRequest file name :' + str(message[3])+
 					  '\nAnd from the address: '+ str(address))
 				#Check if the request file exist on the server or not
@@ -202,24 +276,9 @@ def connection_handler():
 
 			if message[4] == 'a':
 				#start sending message to the client, but only send by checking the alternating bit received
-				print("Received ACK from client" + " Alternative bit : " +str(message[5]) +"and type :" + str(message[4]))
-					
+				print("Received ACK from client" + " Alternative bit : " +str(message[5]) +"and type :" + str(message[4]))		
 				method_alternating_bit(message, connection_object, file_object, counter, address)
-
-				# if alternating_bit == message[5]:
-				# 	data = file_object.file_content[file_object.increase_sequence_counter()]
-				# 	AB_flag = True
-					
-				# else:
-				# 	data = file_object.file_content[file_object.file_sequence_counter]
-				# 	AB_flag = False
-
-				# content = pickle.dumps([counter,data,alternating_bit])
-				# connection_object.send_response_to_client(connection_object.server_socket, content, address)
 				
-				# if AB_flag:
-				# 	alternating_bit ^= 1
-
 			if message[4] == 'c':
 				
 				print("Transmission completed !!")
@@ -230,7 +289,8 @@ def connection_handler():
 		counter += 1
 
 def main():
-	connection_handler()
+
+	connection_handler_selective_repeat()
 
 
 
