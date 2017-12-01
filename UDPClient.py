@@ -1,13 +1,10 @@
 '''
-
 'Client Program'
  Author: Saurab Dulal 
  Date. : October 16, 2017 
  Dependencies: Python 3+ 
- Description: Reliable data transfer using UDP  	
-
+ Description: Reliable data transfer using UDP
 '''
-
 import random
 import socket
 import time 
@@ -15,16 +12,7 @@ import os, sys
 import pickle
 import time
 import hashlib 
-
-
-#Global variables 
-sequence_counter =0
-ack_counter  = 0
-alternating_bit = 1
-receiving_size = 2048
-first_sent = True
-type = 'd' #data request
-total_packet_to_receive = None
+from client_config import client_globals as gb
 
 def exception_handler(e):
 	exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -36,17 +24,18 @@ def missing_elements(L):
     start, end = L[0], L[-1]
     return sorted(set(range(start, end + 1)).difference(L))
 
+#Transport method
 class file_handler():
 	sequnceCount = [] #This will hold record of which chunk(seq) is written to a file
-	global total_packet_to_receive
 	def write_to_file(self, filename, data): #data {seq1:data, seq2:data }
 			with open (filename, 'a+') as f: 
 				for key in data.keys():	
-					if int(key) != 0 and int(key) != int(total_packet_to_receive):
-						print(key,total_packet_to_receive)
+					if int(key) != 0 and int(key) != int(gb.total_packet_to_receive):
+						print(key,gb.total_packet_to_receive)
 						f.write(data[int(key)])
 					self.sequnceCount.append(int(key))
 
+#Transport method
 def verify_packet(self, packet): 
 	checksum = packet[0]
 	length = packet[1]
@@ -61,71 +50,64 @@ def verify_packet(self, packet):
 			return True	
 	return False
 
+#Transport method
 #type - d=data, a=ack, r=retransmission
 def create_packet(self, alternating_bit, protocol, message, file_name='', type='a',):
-	global sequence_counter
-	global ack_counter
+
 	#create list for each message [seqnum,acknowledgment,data]
 
 	#if Selective repeat is used, AB will always be equal to 1
 	if protocol =='AB':
-		packet = pickle.dumps([sequence_counter, ack_counter, message, file_name, type, alternating_bit])
+		packet = pickle.dumps([gb.sequence_counter, gb.ack_counter, message, file_name, type, alternating_bit])
 		return packet
 	else:
-		packet = pickle.dumps([sequence_counter, ack_counter, message, file_name, type])
+		packet = pickle.dumps([gb.sequence_counter, gb.ack_counter, message, file_name, type])
 		return packet
 
+#Transport method
 def method_alternating_bit(self, packet, writeObject, chunk_received, address) : 
-	global alternating_bit
-	global first_sent 
-	global type
-	global total_packet_to_receive
 
-	if alternating_bit == packet[2]:  
-
+	if gb.alternating_bit == packet[2]:  
 		#we have got the right packet, so lets write it to file
-		alternating_bit ^= 1
+		gb.alternating_bit ^= 1
 		
-		if first_sent:
+		if gb.first_sent:
 			print("File is found on the server, now server will start transmitting the file")
-			total_packet_to_receive = packet[1][3] #setting total packet to receive
-			first_sent = False
-			type = 'a'
-		elif first_sent == False and packet[1][3]!='EOF' :
+			gb.total_packet_to_receive = packet[1][3] #setting total packet to receive
+			gb.first_sent = False
+			gb.type = 'a'
+		elif gb.first_sent == False and packet[1][3]!='EOF' :
 			try:
 				writeObject.write_to_file('some_test_file_received', {int(packet[0]):str(packet[1][3])})
 			except Exception as e:
 				exception_handler(e)
 				return False
-
 			chunk_received.received_data.append(str(packet[1]))
 
 		if packet[1][3]=='EOF':
-			type = 'c'
+			gb.type = 'c'
 
 		print("Received address :" +str(address)) 
 	else:
 		return False
-
 	return True 
 
-
+#Transport method
 def selective_repeate(self, packet_buffer,transport_object):
 	
 	#sort the packet by sequence number, and find which sequence are missing 
-	global type, total_packet_to_receive
 	available_sequence  = [key for key in packet_buffer.keys()]
 	
-	if total_packet_to_receive == None:
+	if gb.total_packet_to_receive == None:
 		try:
-			total_packet_to_receive = packet_buffer[0] #setting total packet to receive 
+			gb.total_packet_to_receive = packet_buffer[0] #setting total packet to receive 
 		except Exception as e:
 			pass 
 	missing_sequence = missing_elements(available_sequence)
 	if not missing_sequence:
 		transport_object.packet_received_sequence_number = max(available_sequence)
 		if 'EOF' in packet_buffer.values():
-			type = 'c'	
+			gb.type = 'c'	
 	return missing_sequence
 	
 
@@ -175,7 +157,7 @@ class _client_connection():
 			exception_handler(e)
 
 	def receive_response_from_server(self,client_socket):
-		message, address = client_socket.recvfrom(receiving_size)
+		message, address = client_socket.recvfrom(gb.receiving_size)
 		return message, address
 
 	def close_connection(self,client_socket):
@@ -183,17 +165,16 @@ class _client_connection():
 		client_socket.close()
 
 def connection_handler_selective_repeate(transport, writeObject, connection_object, request_message=[], file_name = "some_test_file", protocol='SR'):
-	global type, total_packet_to_receive
 	parallel_receive = 10 #default receive count 
 	counter = 0
 	packet_buffer = {}
 
 	while True: 
-		sending_packet = transport.create_packet(alternating_bit,protocol,request_message,file_name, type)
+		sending_packet = transport.create_packet(gb.alternating_bit,protocol,request_message,file_name, gb.type)
 		try:
 			connection_object.send_request_to_server(sending_packet, connection_object.address, connection_object.client_socket)
 
-			if type == 'c':
+			if gb.type == 'c':
 				print("The transfer completed, process terminating !! ")
 				break
 
@@ -216,8 +197,8 @@ def connection_handler_selective_repeate(transport, writeObject, connection_obje
 			else:
 				
 				writeObject.write_to_file('some_test_file_received',packet_buffer)	
-				if int(total_packet_to_receive) - int(transport.packet_received_sequence_number) <=10:
-					parallel_receive = int(total_packet_to_receive) - int(transport.packet_received_sequence_number)
+				if int(gb.total_packet_to_receive) - int(transport.packet_received_sequence_number) <=10:
+					parallel_receive = int(gb.total_packet_to_receive) - int(transport.packet_received_sequence_number)
 				else:
 					parallel_receive = 10 #if all packets received, ask for next 10 packets
 				print(parallel_receive)
@@ -228,15 +209,13 @@ def connection_handler_selective_repeate(transport, writeObject, connection_obje
 			print("Request timeout")
 
 def connection_handler_alternating_bit(chunk_received, writeObject, connection_object, request_message, file_name='some_test_file', protocol='AB'):
-	global alternating_bit, first_sent, type
 	counter = 0
-	
 	while True:
-		sending_packet = chunk_received.create_packet(alternating_bit,'AB', request_message, file_name, type)
+		sending_packet = chunk_received.create_packet(gb.alternating_bit,'AB', request_message, file_name, gb.type)
 		try:			
 			connection_object.send_request_to_server(sending_packet, connection_object.address, connection_object.client_socket)
 			''' The last message from client to server will be type=c i.e. complete, and server will close conn after receiving type 'c'''
-			if type == 'c':
+			if gb.type == 'c':
 				print("The transfer process completed, process terminating !!")
 				break
 			message, address = connection_object.receive_response_from_server(connection_object.client_socket)
@@ -269,13 +248,14 @@ if __name__ == '__main__':
 	file_name = "some_test_file"
 	request_message ='Initial Request'
 
-	#create a conn object
+	#Create connection object
 	connection_object  = _client_connection()
 	if connection_object.create_client_socket():
 		print("Client socket created: " + str(connection_object.client_socket))
 	else:
 		print("Failed to create client socket, restart the client program")
 		exit()
+	
 	connection_handler_alternating_bit(transport, writeObject, connection_object, "Initial Request", file_name, 'AB')
 	# connection_handler_selective_repeate(transport, writeObject, connection_object, [], file_name, 'SR')
 

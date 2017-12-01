@@ -1,13 +1,9 @@
-
 '''
-
 'Server Program'
  Author: Saurab Dulal 
  Date  : October 16, 2017 
  Dependencies: Python 3+ 
  Description:Reliable data transfer using UDP
-
-
 '''
 
 import random
@@ -18,12 +14,7 @@ import pickle
 import hashlib 
 import time 
 import copy
-
-global variables 
-receiving_size = 2048
-sequence_counter = 0
-ack_counter = 0
-alternating_bit  = 1
+from server_config import server_globals as gb
 
 def exception_handler(e):
 	exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -102,7 +93,6 @@ class file_handler(server_packet):
 		return self.file_sequence_counter
 
 	def read_in_chunks(self, file_object, chunk_size=1024):
-		
 		'''Lazy function (generator) to read a file piece by piece.
 		Default chunk size: 1k'''	
 		while True:
@@ -112,7 +102,6 @@ class file_handler(server_packet):
 			yield data
 	
 	def file_read(self,file_name,type='s'): #s=stats, d=data
-		#First iteration get every info about file
 		self.file_name = file_name
 		counter = 0
 		packet = server_packet()
@@ -139,30 +128,26 @@ class file_handler(server_packet):
 		
 def method_alternating_bit(message, connection_object, file_object, counter, address):
 	
-	global alternating_bit
 	AB_flag = False #only flip AB if AB_Client matches with AB server
-
-	if alternating_bit == message[5]:
+	if gb.alternating_bit == message[5]:
 		data = file_object.file_content[file_object.increase_sequence_counter()]
 		AB_flag = True		
 	else:
 		data = file_object.file_content[file_object.file_sequence_counter]
 		AB_flag = False
 
-	content = pickle.dumps([counter,data,alternating_bit])
+	content = pickle.dumps([counter,data,gb.alternating_bit])
 	connection_object.send_response_to_client(connection_object.server_socket, content, address)
-				
+
 	if AB_flag:
-		alternating_bit ^= 1
+		gb.alternating_bit ^= 1
 	return
 
 def get_packets(file_object, seq_list):
 	packet_list = []
 	loop_counter = copy.deepcopy(file_object.file_sequence_counter)
-
-	#determine no_of_packet to send
+	#Determine no of packet to be send
 	loop_range = 0 
-
 	if len(file_object.file_content) - loop_counter <= 10: 
 		loop_range = len(file_object.file_content) -1 
 	else:
@@ -180,7 +165,6 @@ def selective_repeate(message, file_name, file_object): #2 message, #3 is filena
 	
 	#First check if file is found or not, if not found send, just one message with file not found exception
 	#send blocks of 10 packets at a time 
-
 	if not file_object.file_content:
 		file_object.file_read(file_name) #packets list will be created by this time 
 		#send the desired message
@@ -190,9 +174,8 @@ def selective_repeate(message, file_name, file_object): #2 message, #3 is filena
 def connection_handler_selective_repeat(file_object, connection_object):	
 	counter = 0 
 	while True:
-		message, address = connection_object.server_socket.recvfrom(receiving_size)
+		message, address = connection_object.server_socket.recvfrom(gb.receiving_size)
 		message = pickle.loads(message)
-
 		if message:
 			if message[4] == 'd':
 				print('Received request from the client: ' + str(message[2]) +
@@ -200,8 +183,8 @@ def connection_handler_selective_repeat(file_object, connection_object):
 					  '\nAnd from the address: '+ str(address))
 
 				packets_to_be_send = selective_repeate(message[2], message[3], file_object)   #2 message, #3 is filename 
-				#loop and send all he packets 
-
+				
+				#loop through and send all the available packets 
 				for x in range(0,len(packets_to_be_send)):
 					sending_packet = pickle.dumps(packets_to_be_send[x])
 					connection_object.send_response_to_client(connection_object.server_socket,sending_packet,address)
@@ -212,10 +195,9 @@ def connection_handler_selective_repeat(file_object, connection_object):
 				break
 
 def connection_handler_alternating_bit(file_object, connection_object):
-	global alternating_bit
 	counter = 0
 	while True:
-		message, address= connection_object.server_socket.recvfrom(receiving_size)
+		message, address= connection_object.server_socket.recvfrom(gb.receiving_size)
 		message = pickle.loads(message) #1=seq, 2=ack, 3=mes, 4=file_name, 5=type, 6=alternating_bit
 
 		if message:
@@ -226,9 +208,9 @@ def connection_handler_alternating_bit(file_object, connection_object):
 				#Check if the request file exist on the server or not
 				file_object.file_read(message[3])
 				file_stat = file_object.file_content[file_object.increase_sequence_counter()]
-				file_stat = pickle.dumps([counter,file_stat,alternating_bit])
+				file_stat = pickle.dumps([counter,file_stat,gb.alternating_bit])
 				connection_object.send_response_to_client(connection_object.server_socket,file_stat,address)
-				alternating_bit ^= 1
+				gb.alternating_bit ^= 1
 				file_object.file_sequence_counter = 0 #whenever you received 'd' request, its always the beginning of the process
 
 			if message[4] == 'a':
