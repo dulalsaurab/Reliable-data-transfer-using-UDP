@@ -1,5 +1,4 @@
 #!/bin/bash
-
 '''
 'Server Program'
  Author: Saurab Dulal 
@@ -7,9 +6,7 @@
  Dependencies: Python 3+ 
  Description:Reliable data transfer using UDP
  License: wtfpl 
-
 '''
-
 import random
 import socket 
 import datetime
