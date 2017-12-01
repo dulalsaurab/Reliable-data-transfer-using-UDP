@@ -1,11 +1,12 @@
 #!/bin/bash
- 
+
 '''
 'Server Program'
  Author: Saurab Dulal 
  Date  : October 16, 2017 
  Dependencies: Python 3+ 
  Description:Reliable data transfer using UDP
+ License: wtfpl 
 
 '''
 
