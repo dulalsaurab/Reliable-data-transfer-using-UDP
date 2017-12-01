@@ -1,9 +1,12 @@
+#!/bin/bash
+ 
 '''
 'Server Program'
  Author: Saurab Dulal 
  Date  : October 16, 2017 
  Dependencies: Python 3+ 
  Description:Reliable data transfer using UDP
+
 '''
 
 import random
@@ -26,6 +29,7 @@ class server_connection():
 	server_port = None
 	server_socket = None
 	server_address = None
+	
 	def __init__(self,server_ip='127.0.0.1',server_port=12000):
 		print("Initializing ip address and port number")
 		self.server_port = server_port
@@ -80,7 +84,6 @@ class server_packet():
 		return [self.checksum, self.length, self.increase_seqNumber(), self.msg]
 
 class file_handler(server_packet):
-
 	file_name = None
 	file_sequence_counter = -1
 	file_content = [] #{sequence:data}
@@ -105,6 +108,7 @@ class file_handler(server_packet):
 		self.file_name = file_name
 		counter = 0
 		packet = server_packet()
+		
 		try:
 			file_size = os.stat(file_name).st_size
 			self.file_content.append(server_packet().make_packet(str(file_size)))
@@ -127,8 +131,8 @@ class file_handler(server_packet):
 		self.file_content[0][2] = 0
 		
 def method_alternating_bit(message, connection_object, file_object, counter, address):
-	
 	AB_flag = False #only flip AB if AB_Client matches with AB server
+	
 	if gb.alternating_bit == message[5]:
 		data = file_object.file_content[file_object.increase_sequence_counter()]
 		AB_flag = True		
@@ -148,6 +152,7 @@ def get_packets(file_object, seq_list):
 	loop_counter = copy.deepcopy(file_object.file_sequence_counter)
 	#Determine no of packet to be send
 	loop_range = 0 
+	
 	if len(file_object.file_content) - loop_counter <= 10: 
 		loop_range = len(file_object.file_content) -1 
 	else:
@@ -162,7 +167,6 @@ def get_packets(file_object, seq_list):
 	return packet_list
 
 def selective_repeate(message, file_name, file_object): #2 message, #3 is filename 
-	
 	#First check if file is found or not, if not found send, just one message with file not found exception
 	#send blocks of 10 packets at a time 
 	if not file_object.file_content:
@@ -176,19 +180,17 @@ def connection_handler_selective_repeat(file_object, connection_object):
 	while True:
 		message, address = connection_object.server_socket.recvfrom(gb.receiving_size)
 		message = pickle.loads(message)
+		
 		if message:
 			if message[4] == 'd':
 				print('Received request from the client: ' + str(message[2]) +
 					  '\nRequest file name :' + str(message[3])+
 					  '\nAnd from the address: '+ str(address))
-
 				packets_to_be_send = selective_repeate(message[2], message[3], file_object)   #2 message, #3 is filename 
-				
 				#loop through and send all the available packets 
 				for x in range(0,len(packets_to_be_send)):
 					sending_packet = pickle.dumps(packets_to_be_send[x])
-					connection_object.send_response_to_client(connection_object.server_socket,sending_packet,address)
-			
+					connection_object.send_response_to_client(connection_object.server_socket,sending_packet,address)		
 			elif message[4] == 'c':
 				print("Transmission completed !!")
 				connection_object.close_connection(connection_object.server_socket)
@@ -199,8 +201,9 @@ def connection_handler_alternating_bit(file_object, connection_object):
 	while True:
 		message, address= connection_object.server_socket.recvfrom(gb.receiving_size)
 		message = pickle.loads(message) #1=seq, 2=ack, 3=mes, 4=file_name, 5=type, 6=alternating_bit
-
+		
 		if message:
+		
 			if message[4] == 'd':
 				print('Received request from the client: ' + str(message[2]) +
 					  '\nRequest file name :' + str(message[3])+

@@ -1,9 +1,11 @@
+#!/bin/bash
 '''
 'Client Program'
  Author: Saurab Dulal 
  Date. : October 16, 2017 
  Dependencies: Python 3+ 
  Description: Reliable data transfer using UDP
+ License: wtfpl
 '''
 import random
 import socket
@@ -53,10 +55,9 @@ def verify_packet(self, packet):
 #Transport method
 #type - d=data, a=ack, r=retransmission
 def create_packet(self, alternating_bit, protocol, message, file_name='', type='a',):
-
-	#create list for each message [seqnum,acknowledgment,data]
-
-	#if Selective repeat is used, AB will always be equal to 1
+	#Create list for each message [sequence number, acknowledgment, data]
+	#Note: if Selective repeat is used, AB will always be equal to 1
+	
 	if protocol =='AB':
 		packet = pickle.dumps([gb.sequence_counter, gb.ack_counter, message, file_name, type, alternating_bit])
 		return packet
@@ -70,7 +71,6 @@ def method_alternating_bit(self, packet, writeObject, chunk_received, address) :
 	if gb.alternating_bit == packet[2]:  
 		#we have got the right packet, so lets write it to file
 		gb.alternating_bit ^= 1
-		
 		if gb.first_sent:
 			print("File is found on the server, now server will start transmitting the file")
 			gb.total_packet_to_receive = packet[1][3] #setting total packet to receive
@@ -83,10 +83,8 @@ def method_alternating_bit(self, packet, writeObject, chunk_received, address) :
 				exception_handler(e)
 				return False
 			chunk_received.received_data.append(str(packet[1]))
-
 		if packet[1][3]=='EOF':
 			gb.type = 'c'
-
 		print("Received address :" +str(address)) 
 	else:
 		return False
@@ -94,10 +92,8 @@ def method_alternating_bit(self, packet, writeObject, chunk_received, address) :
 
 #Transport method
 def selective_repeate(self, packet_buffer,transport_object):
-	
 	#sort the packet by sequence number, and find which sequence are missing 
 	available_sequence  = [key for key in packet_buffer.keys()]
-	
 	if gb.total_packet_to_receive == None:
 		try:
 			gb.total_packet_to_receive = packet_buffer[0] #setting total packet to receive 
@@ -124,7 +120,6 @@ class _transport():
 #This class will create connection and will receive the response -
 #After receiving the response it will send the response to transport for further verification
 class _client_connection():
-
 	#Create connection
 	server_ip = None
 	server_port = None
@@ -239,7 +234,7 @@ def connection_handler_alternating_bit(chunk_received, writeObject, connection_o
 
 
 if __name__ == '__main__':
-	
+
 	print("Enter a file name to download from the server")
 	file_name = input()
 	print("File name :{}".format(file_name))
