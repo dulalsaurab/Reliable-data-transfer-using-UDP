@@ -31,7 +31,7 @@ class file_handler():
   def write_to_file(self, filename, data): #data {seq1:data, seq2:data }
       with open (filename, 'a+') as f: 
         for key in data.keys(): 
-          if int(key) != 0 and int(key) != int(gb.total_packet_to_receive):
+          if int(key) != 0 and int(key) != 1 and int(key) != int(gb.total_packet_to_receive):
             print(key,gb.total_packet_to_receive)
             f.write(data[int(key)])
           self.sequnceCount.append(int(key))

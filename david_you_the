@@ -1,0 +1,2630 @@
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+120995121001121007121007NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programming language, library, platform requirements, and so forth. For new projects, we ask you to consider how the specifics, such as language choice, may impact the ability to attract participants. The hackathon organizers will provide
+proposal feedback and assistance to ensure projects have a concrete path to implementation.
+
+If I propose a project, do I have to go to the Hackathon?
+Proposals must specify one or more representatives who will attend the hackathon to pitch their idea and guide its development over the duration of the hackathon (hacking optional). Representatives will have 10 minutes to present their idea to attendees at the event opening. The pitch should emphasize the project's motivation and use cases. 
+
+FORMAT
+Proposals should adhere to the following format:
+1 page max. (plain text)
+contact information of submitters
+contact information of project representative(s)
+distinct sections for the:
+motivation,
+approach and/or concept,
+contributions to NDN,
+functional requirements, and
+metrics (how progress can be measured).
+
+Please remember that participants will have a limited amount of time (see http://ndncomm.github.io) to work on their project. All proposals will be reviewed by the hackathon organizers. Projects will be judged by a panel (TBD) for the “Best of Hackathon” prize. We hope that the hackathon will be a fun event for all and that projects will lead to collaborations extending beyond NDNcomm.
+
+DEADLINE
+Email proposal to ndncomm2015-hackathon@named-data.net
+Proposal submission deadline: Monday, August 31, 2015
+Notification: Monday, September 7, 2015
+
+Hackathon Information and Schedule
+Website: http://ndncomm.github.io
+Open: Saturday, September 26, 2015 @ 9am - 8pm
+Close: Sunday, September 27, 2015 @ 9am - 6pm
+Judging & Awards: Sunday, September 27, 2015 @ 6pm - 8pm
+Post Projects on Website: Monday, September 28, 2015 
+
+Organizers
+Alex Afanasyev (UCLA)
+Steve DiBenedetto (Colorado State University)
+
+Jeff Thompson (UCLA)
+
+
+NDNcomm 2015 Hackathon Call for Projects
+Proposals Due: Aug. 31, 2015. Hackathon: Sept. 26-27, 2015.
+
+The NDNcomm 2015 Hackathon solicits project proposals that advance the state of NDN. 
+
+We are looking for projects that:
+directly address a research need,
+create new NDN tools or modify existing tools, and/or
+create or improve documentation and how-to guides.
+
+Participants will have approximately 12 hours to work on the projects (see http://ndncomm.github.io for additional details).
+
+How open-ended should proposals be?
+Ideally, project proposals should include room for discussion and cooperative design during the hackathon, but may be entirely planned in advance (e.g. a new NFD feature). We ask that proposals avoid larger projects that are completely open to design. The significance of the contribution is more important than spectacle. 
+
+Who will work on the projects?
+Hackathon projects will be developed by small teams (< 8) and should be able to show measurable progress after two days. Participants will be encouraged to regroup and refresh overnight. The hackathon welcomes all interested participants, regardless of NDN experience, so we are seeking projects that are suitable for experienced NDN developers as well as those approachable by newcomers. For example, a project could decompose into tasks of varying skill levels or, alternatively, be specifically targeted.
+
+What languages, libraries, etc. are allowed?
+Project proposals should declare any programm

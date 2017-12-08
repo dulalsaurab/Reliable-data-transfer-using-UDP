@@ -74,6 +74,8 @@ class server_packet():
     return self.seqNo
 
   def make_packet(self, data):
+
+    
     self.total_packets.append(self)
     self.msg = data
     self.length = str(len(data))
