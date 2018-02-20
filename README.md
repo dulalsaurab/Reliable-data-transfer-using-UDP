@@ -1,5 +1,6 @@
 # Reliable	data	transfer	using	UDP
 
+
 ## Introduction
 
 “Reliable data transfer using UDP (User Datagram Protocol – RFC 768) for file transfer” is a client-server application. The reliability over UDP is achieved using Alternating Bit(AB) or Selective Repeat(SR) protocol. UDP, unlike TCP (Transmission Control Protocol), is an unreliable, connectionless data transfer protocol existing in the transport layer of TCP/IP architecture. The primary purpose of this project is to download a big file from a server residing in different IP location using one of these protocols i.e. either SRP or ABP.
@@ -25,7 +26,7 @@ The server facilitates the file transfer process via various methods existing in
 
 
 ## Architecture Diagram
-
+![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/Arctitech%20.png?raw=true)
 ```
 Figure 3.2: UDP file download system architecture
 ```
@@ -39,6 +40,8 @@ The high-level flow, state and the class diagram of the project are shown below.
 
 The flow diagram of the UPD file transfer is shown in the image below.
 
+![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/flow%20chart.png?raw=true)
+
 ```
 Figure 4.1: Flow Diagram - UPD file download process using client-server model
 ```
@@ -47,9 +50,12 @@ _Note: The symbols used in the flow diagram are adopted from the standard flow d
 
 ## State Diagram
 
+![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/State%20Diagram%20Client%20Server.png?raw=true)
+
 ```
 Fig 4.2.1: State diagram, client-server - request-response process
 ```
+![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/State%20Diagram%20AB.png?raw=true)
 ```
 Fig 4.2.2: State Diagram - Alternate bit protocol
 ```
@@ -58,10 +64,11 @@ Reference: Computer Networking – A top-down approach 6th edition, Kurose, Ross
 ```
 
 ## Class Diagrams
-
+![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/Class%20Client.png?raw=true)
 ```
 Figure 4.3.1: Class Diagram UDP Client Program
 ```
+![alt text](https://raw.githubusercontent.com/dulalsaurab/dulalsaurab.github.io/d34708152907091142a0f6071d7b49fce03b7edb/assets/img/Class%20Diagram%20Server.png)
 ```
 Figure 4.3.2: Class Diagram UDP Server Program
 ```
