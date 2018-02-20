@@ -58,8 +58,6 @@ Figure: State diagram, client-server - request-response process
 ![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/State%20Diagram%20AB.png?raw=true)
 ```
 Figure: State Diagram - Alternate bit protocol
-```
-```
 Reference: Computer Networking – A top-down approach 6th edition, Kurose, Ross
 ```
 
