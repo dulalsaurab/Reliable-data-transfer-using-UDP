@@ -28,7 +28,7 @@ The server facilitates the file transfer process via various methods existing in
 ## Architecture Diagram
 ![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/Arctitech%20.png?raw=true)
 ```
-Figure 3.2: UDP file download system architecture
+Figure: UDP file download system architecture
 ```
 
 
@@ -43,7 +43,7 @@ The flow diagram of the UPD file transfer is shown in the image below.
 ![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/flow%20chart.png?raw=true)
 
 ```
-Figure 4.1: Flow Diagram - UPD file download process using client-server model
+Figure: Flow Diagram - UPD file download process using client-server model
 ```
 _Note: The symbols used in the flow diagram are adopted from the standard flow diagram design._
 
@@ -53,11 +53,11 @@ _Note: The symbols used in the flow diagram are adopted from the standard flow d
 ![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/State%20Diagram%20Client%20Server.png?raw=true)
 
 ```
-Fig 4.2.1: State diagram, client-server - request-response process
+Figure: State diagram, client-server - request-response process
 ```
 ![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/State%20Diagram%20AB.png?raw=true)
 ```
-Fig 4.2.2: State Diagram - Alternate bit protocol
+Figure: State Diagram - Alternate bit protocol
 ```
 ```
 Reference: Computer Networking – A top-down approach 6th edition, Kurose, Ross
@@ -66,11 +66,11 @@ Reference: Computer Networking – A top-down approach 6th edition, Kurose, Ross
 ## Class Diagrams
 ![alt text](https://github.com/dulalsaurab/dulalsaurab.github.io/blob/master/assets/img/Class%20Client.png?raw=true)
 ```
-Figure 4.3.1: Class Diagram UDP Client Program
+Figure: Class Diagram UDP Client Program
 ```
 ![alt text](https://raw.githubusercontent.com/dulalsaurab/dulalsaurab.github.io/d34708152907091142a0f6071d7b49fce03b7edb/assets/img/Class%20Diagram%20Server.png)
 ```
-Figure 4.3.2: Class Diagram UDP Server Program
+Figure: Class Diagram UDP Server Program
 ```
 
 ## Implementation
@@ -104,7 +104,7 @@ It also imports various global variables ( type, sequence counter, alternating b
 - total_number_of_packets : Total no of packets available 
 ```
 
-Now on the basis of the selected method, server start sending the packets, either 1 at a time in case of ABP, or 10 packets in case of SRP. Server response can be a new transmission of data or re-transmission in case of packet loss. Moreover, if the file is not found at the first hand, it sends a “file not found” exception to the client. Client waiting for server response, receives the packet (in some case it may not receive as well), send it to the transport for the verification of the packet. Transport, dissect the packet, calculate the checksum and length, verify it against the received parameters and upon verification, it sends the data to the file handler. And so, file handler writes the data to the file. During this process, the client may undergo time out or may receive distorted packets, in both of these cases it requests the server for the retransmission. The basic rule for retransmission in case of ABP is, if the received AB from the client is different than the one existing on the server, the server performs retransmission. Similarly, in case of SRP, the client notifies server about the specific missing packets, and server retransmits them. This process continues until all the packets from the server are received by the client. Client upon receiving all the packets from the server sends an ACK with type = ‘c’ (c for complete) to the server. Receiving ACK ‘c’ server closes the connection and terminates the transmission process with transmission complete message. There also exists some other helper functions such as exception handler – to track/handle, and print exceptions, missing sequence verifier - client process, to verify missing sequence in case of SRP and so on. All the class and function names are presented in the Appendix.
+Now, on the basis of the selected method, server start sending the packets, either 1 at a time in case of ABP, or 10 packets in case of SRP. Server response can be a new transmission of data or re-transmission in case of packet loss. Moreover, if the file is not found at the first hand, it sends a “file not found” exception to the client. Client waiting for server response, receives the packet (in some case it may not receive as well), send it to the transport for the verification of the packet. Transport, dissect the packet, calculate the checksum and length, verify it against the received parameters and upon verification, it sends the data to the file handler. And so, file handler writes the data to the file. During this process, the client may undergo time out or may receive distorted packets, in both of these cases it requests the server for the retransmission. The basic rule for retransmission in case of ABP is, if the received AB from the client is different than the one existing on the server, the server performs retransmission. Similarly, in case of SRP, the client notifies server about the specific missing packets, and server retransmits them. This process continues until all the packets from the server are received by the client. Client upon receiving all the packets from the server sends an ACK with type = ‘c’ (c for complete) to the server. Receiving ACK ‘c’ server closes the connection and terminates the transmission process with transmission complete message. There also exists some other helper functions such as exception handler – to track/handle, and print exceptions, missing sequence verifier - client process, to verify missing sequence in case of SRP and so on. All the class and function names are presented in the Appendix.
 
 ## Technical Specifications
 
